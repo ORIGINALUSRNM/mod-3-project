@@ -1,11 +1,63 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Module 3 Landing Page</title>
-  </head>
-  <body>
-    <h1>Module 3 Final Project</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module 3 Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/d3c442353e.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</head>
+
+
+<body>
+  <header>
+    <nav class="header__nav">
+      <a href="#" class="header__nav__logo">
+        <img src="assets/treact-logo.svg" alt="treact logo" class="logo" />
+        Treact
+      </a>
+      <div class="header__links">
+        <ul class="header__nav__links">
+          <li class="nav__link"><a href="#about">About</a></li>
+          <li class="nav__link"><a href="#blog">Blog</a></li>
+          <li class="nav__link"><a href="#pricing">Pricing</a></li>
+          <li class="nav__link"><a href="#contact">Contact Us</a></li>
+        </ul>
+        <ul class="header__nav___auth__links">
+          <li class="nav__link"><a href="#login">Login</a></li>
+          <li>
+            <a href="#" class="nav__link--signup btn-primary">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__small">
+        <button class="btn__menu btn__menu--closed" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <button class="btn__menu btn__menu--opened" onclick="closeMenu()">
+          <i class="fa-solid fa-times"></i>
+        </button>
+        <div class="header__links--small">
+          <ul class="header__nav__links">
+            <li class="nav__link"><a href="#about">About</a></li>
+            <li class="nav__link"><a href="#blog">Blog</a></li>
+            <li class="nav__link"><a href="#pricing">Pricing</a></li>
+            <li class="nav__link"><a href="#contact">Contact Us</a></li>
+          </ul>
+          <ul class="header__nav___auth__links">
+            <li class="nav__link"><a href="#login">Login</a></li>
+            <li>
+              <a href="#" class="nav__link--signup btn-primary">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>main content</main>
+  <footer>Footer</footer>
+</body>
+
 </html>
