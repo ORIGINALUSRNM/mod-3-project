@@ -13,10 +13,9 @@ body {
 }
 
 p {
-  color: rgb(36, 62, 99);
-  font-size: 16px;
-  line-height: 24px;
-  margin: 20px 0px;
+  color: rgb(124, 139, 161);
+  font-size: 14px;
+  margin-top: 16px;
 }
 
 input {
@@ -44,6 +43,29 @@ input:focus {
 h1 {
   font-size: 30px;
   font-weight: 700;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: 0.9px;
+}
+
+h3 {
+  color: rgb(36, 62, 99);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  line-height: 24px;
+}
+
+h5 {
+  color: rgb(100 21 255);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
 }
 
 a {
@@ -98,6 +120,22 @@ ul {
 
 .relative {
   position: relative;
+}
+
+.img__frame {
+  border: 1px solid rgb(226, 232, 240);
+  border-radius: 9999px;
+  display: inline-block;
+  height: 66px;
+  padding: 20px;
+  width: 66px;
+}
+
+.description {
+  color: rgb(124, 139, 161);
+  font-size: 16px;
+  line-height: 32px;
+  margin-top: px;
 }
 
 /* 
@@ -251,6 +289,13 @@ COMPONENTS
   position: relative;
 }
 
+.hero__p {
+  color: rgb(36, 62, 99);
+  font-size: 16px;
+  line-height: 24px;
+  margin: 20px 0px;
+}
+
 .hero__email {
   max-width: 448px;
   position: relative;
@@ -306,6 +351,63 @@ COMPONENTS
   transform: translateX(-66.67%) translateY(30%);
   width: 256px;
   z-index: -1;
+}
+
+/* FEATURES */
+
+.features {
+  padding-top: 80px;
+}
+
+.features__p {
+  line-height: 22px;
+  text-align: center;
+}
+
+.features__spacer {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.section__list__item {
+  margin: 0 16px;
+  padding: 32px 0px;
+  text-align: center;
+  width: 24px;
+}
+
+.section__title {
+  text-align: center;
+}
+
+.section__header {
+  text-align: center;
+}
+
+.features ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 384px;
+}
+
+.section__list__content {
+  margin-top: 16px;
+}
+
+.section__list__item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 352px;
+  padding: 32px 8px;
+  width: 100%;
+}
+
+.section__list__content h3 {
+  text-align: center;
 }
 
 /* RESPONSIEVE */
