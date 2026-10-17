@@ -9,6 +9,7 @@
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
+  overflow-x: hidden;
   padding: 32px;
 }
 
@@ -151,6 +152,7 @@ COMPONENTS
   display: inline-block;
   font-size: 14px;
   font-weight: 600;
+  line-height: 21px;
   padding: 12px 32px;
   text-decoration: none;
 }
@@ -420,6 +422,56 @@ COMPONENTS
   width: 256px;
 }
 
+/* QUALITY WORK */
+.quality {
+  display: flex;
+  flex-direction: column;
+  margin: 160px auto 0 auto;
+  max-width: 480px;
+}
+
+.quality__img {
+  border: 1px solid rgb(226, 232, 240);
+  border-radius: 6px;
+}
+
+.quality__left {
+  position: relative;
+}
+
+.quality__left svg {
+  bottom: -40px;
+  fill: rgb(100 21 255);
+  height: 80px;
+  position: absolute;
+  right: -40px;
+  width: 80px;
+  z-index: -10;
+}
+
+.section__title {
+  margin-top: 64px;
+}
+
+.section__header {
+  font-size: 30px;
+}
+
+.quality__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.quality__right p {
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
+}
+
+.quality__right button {
+  margin: 32px auto 0 auto;
+}
+
 /* RESPONSIEVE */
 
 @media (min-width: 641px) {
@@ -470,6 +522,48 @@ COMPONENTS
   }
   .section__list__content h3,
   .section__list__content p {
+    text-align: left;
+  }
+  /* QUALITY WORK */
+  .quality__right .section__header {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* QUALITY WORK */
+  .quality {
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 96px 0 96px 0;
+  }
+  .quality__left {
+    align-self: center;
+    order: 2;
+    width: 50%;
+  }
+  .quality__right {
+    margin: 0 48px 0 0;
+    order: 1;
+    width: 50%;
+  }
+  .quality__right p {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+  }
+
+  .quality__right button {
+    align-self: flex-start;
+    margin: 32px 0 0 0;
+  }
+
+  .section__title {
+    margin-top: 0px;
+    text-align: left;
+  }
+  .section__header {
     text-align: left;
   }
 }
@@ -525,6 +619,17 @@ COMPONENTS
   }
   .features__p {
     font-size: 18px;
+  }
+  /* QUALITY WORK */
+  .quality__right .section__header {
+    font-size: 48px;
+    margin-top: 16px;
+  }
+
+  .quality__right p {
+    font-size: 18px;
+    line-height: 29px;
+    margin-top: 16px;
   }
 }
 
