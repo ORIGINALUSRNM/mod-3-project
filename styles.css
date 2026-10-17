@@ -428,6 +428,7 @@ COMPONENTS
   flex-direction: column;
   margin: 160px auto 0 auto;
   max-width: 480px;
+  padding: 80px 0;
 }
 
 .quality__img {
@@ -470,6 +471,73 @@ COMPONENTS
 
 .quality__right button {
   margin: 32px auto 0 auto;
+}
+
+/* STEPS */
+.steps {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  padding: 80px 0;
+}
+
+.steps__img__wrap {
+  margin: 0 auto;
+  max-width: 448px;
+  position: relative;
+}
+
+.steps__img__wrap svg {
+  bottom: 0px;
+  fill: rgb(100 21 255);
+  height: 80px;
+  opacity: 0.15;
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, 50%);
+  width: 80px;
+  z-index: -10;
+}
+
+.steps__list__item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.steps__list__item {
+  margin-top: 32px;
+}
+
+.steps__list__content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  max-width: 320px;
+  text-align: center;
+}
+
+.steps__list__content h3 {
+  font-size: 20px;
+}
+
+.steps__list {
+  margin-top: 48px;
+}
+
+.steps__list__number {
+  color: rgb(203, 213, 224);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.steps__list__content .description {
+  font-size: 14px;
+  line-height: 28px;
+  margin-top: 12px;
 }
 
 /* RESPONSIEVE */
@@ -528,6 +596,11 @@ COMPONENTS
   .quality__right .section__header {
     font-size: 36px;
   }
+  /* STEPS */
+  .steps__right .section__header {
+    font-size: 36px;
+    line-height: 45px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -564,6 +637,33 @@ COMPONENTS
     text-align: left;
   }
   .section__header {
+    text-align: left;
+  }
+  /* STEPS */
+  .steps {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .steps__left {
+    align-items: center;
+    display: flex;
+    width: 50%;
+  }
+  .steps__img__wrap {
+    max-width: 100%;
+  }
+  .steps__right {
+    margin-left: 48px;
+  }
+  .steps__list__item {
+    align-items: start;
+    flex-direction: row;
+  }
+  .steps__list__content {
+    align-items: start;
+    margin: 0 auto 0 24px;
+  }
+  .steps__list__content .description {
     text-align: left;
   }
 }
@@ -630,6 +730,11 @@ COMPONENTS
     font-size: 18px;
     line-height: 29px;
     margin-top: 16px;
+  }
+  /* STEPS */
+  .steps__right .section__header {
+    font-size: 48px;
+    line-height: 60px;
   }
 }
 
